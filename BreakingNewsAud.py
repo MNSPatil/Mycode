@@ -78,11 +78,11 @@ def main(date,gdpr_supp_list,gdpr_inp_list):
 	print("INFO: Initialising spark session")
 	spark = SparkSession.builder.appName("BreakingNews Campaign").enableHiveSupport().getOrCreate()
 	
-	file_path = "/projects/direct/breakingNews/seed_cohort/*"
+	file_path = ""
 	#output_path = "/projects/direct/stage/manish/breakingn/out_notnull/"
-	seed_profile_out = "/projects/direct/breakingNews/profile_out"
-	pref_table="mpc.preference_user_snapshot"
-	profile_table="crm_share.customer_profile_table"
+	seed_profile_out = ""
+	pref_table=""
+	profile_table=""
 	gdpr_dsr=gdpr_supp_list
 	gdpr_aoc=gdpr_inp_list
 
